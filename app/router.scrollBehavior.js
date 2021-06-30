@@ -1,4 +1,4 @@
-export default function (to, from, savedPosition) {
+export default function (to, _from, _savedPosition) {
   if (to.hash) {
     return {
       selector: to.hash,
