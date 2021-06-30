@@ -20,6 +20,7 @@
               right="auto"
               z-index="10"
               color="gray.400"
+              :d="['none', 'none', 'inherit']"
             >
               <CList
                 d="flex"
@@ -54,7 +55,6 @@
                     <CIcon font-size="25px" name="linkedin-in" />
                   </CLink>
                 </CListItem>
-                <CListItem></CListItem>
               </CList>
             </CBox>
             <Nuxt />
@@ -66,6 +66,7 @@
               right="40px"
               z-index="10"
               color="gray.400"
+              :d="['none', 'none', 'inherit']"
             >
               <CList
                 d="flex"

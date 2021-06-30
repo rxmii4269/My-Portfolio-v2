@@ -20,6 +20,7 @@
       white-space="nowrap"
       line-height="1.1"
       color="gray.400"
+      :flex-wrap="['wrap', 'wrap', 'nowrap']"
       >Some Things I've Built
     </CHeading>
     <CList padding="0" margin="0">

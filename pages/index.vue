@@ -1,5 +1,5 @@
 <template>
-  <CBox as="main" flex-grow="1" px="150px">
+  <CBox as="main" flex-grow="1" :px="['0','0px','150px']">
     <CBox
       as="section"
       d="flex"

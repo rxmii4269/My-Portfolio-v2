@@ -2,7 +2,7 @@
   <CBox
     as="nav"
     h="100px"
-    px="50px"
+    :px="['10px', '10px', '50px']"
     d="flex"
     align-items="center"
     justify-content="space-between"
@@ -19,7 +19,7 @@
     >
       <CPseudoBox w="40px" h="40px"> <Logo /> </CPseudoBox>
     </CLink>
-    <CFlex>
+    <CFlex :d="['none', 'none', 'flex']">
       <CList
         d="flex"
         flex-direction="row"
