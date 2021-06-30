@@ -1,7 +1,5 @@
 <template>
-  <CBox
-    as="main"
-  >
+  <CBox as="main" flex-grow="1" px="150px">
     <CBox
       as="section"
       d="flex"

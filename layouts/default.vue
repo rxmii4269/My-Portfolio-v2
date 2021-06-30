@@ -57,7 +57,7 @@
                 <CListItem></CListItem>
               </CList>
             </CBox>
-            <Nuxt v-chakra flex-grow="1" px="150px" />
+            <Nuxt />
             <CBox
               w="40px"
               position="fixed"
