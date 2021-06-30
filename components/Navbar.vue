@@ -101,22 +101,18 @@
     </CFlex>
   </CBox>
 </template>
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data() {
-    return {}
-  },
+<script>
+export default {
   mounted() {
     const animeLinks = this.$el.getElementsByClassName('nav-list-wrapper')
     this.$anime({
       targets: animeLinks,
       translate: 270,
-      delay: this.$anime.stagger(300, {easing: 'easeInQuad'}),
-      loop: true
+      delay: this.$anime.stagger(300, { easing: 'easeInQuad' }),
+      loop: true,
     })
   },
-})
+}
 </script>
 <style>
 .nav-list:before {
