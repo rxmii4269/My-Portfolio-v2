@@ -59,7 +59,17 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      preset: {
+        autoprefixer: {
+          grid: true,
+          flexbox: true,
+          overrideBrowserslist: ['last 3 versions', '> 1%', 'ie 8', 'ie 7'],
+        },
+      },
+    },
+  },
 
   chakra: {
     extendTheme: customTheme,
