@@ -35,7 +35,7 @@
                   width: '1px',
                   height: '90px',
                   margin: '0px auto',
-                  bg: 'gray.500',
+                  bg: 'gray.400',
                 }"
               >
                 <CListItem>
@@ -81,7 +81,7 @@
                   width: '1px',
                   height: '90px',
                   margin: '0px auto',
-                  bg: 'gray.500',
+                  bg: 'gray.400',
                 }"
               >
                 <CListItem>
