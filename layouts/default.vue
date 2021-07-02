@@ -104,6 +104,16 @@
         </CBox>
       </CColorModeProvider>
     </CThemeProvider>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KPTZ2ZK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </div>
 </template>
 <script>
