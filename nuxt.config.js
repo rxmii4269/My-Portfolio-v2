@@ -15,8 +15,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Learn about my endeavours as a developer and what I have built' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Learn about my endeavours as a developer and what I have built',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme-color', content: '#76e4f7' },
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -26,6 +32,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
+
+  loadingIndicator: {
+    name: 'folding-cube',
+    color: '#76e4f7',
+    background: '#000A21',
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/anime.js'],
@@ -55,6 +67,11 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+      name: 'Romaine Murray',
+      short_name: 'Romaine Murray',
+    },
+    meta: {
+      theme_color: '#000A21',
     },
   },
 
