@@ -5,6 +5,7 @@
     max-width="700px"
     margin="0px auto"
     padding="100px 0px"
+    :px="['1rem', '1rem', '0']"
   >
     <CHeading
       d="flex"
@@ -17,6 +18,7 @@
       line-height="1.1"
       color="gray.400"
       class="experience"
+      :flex-wrap="['wrap', 'wrap' , 'nowrap']"
     >
       Where I've Worked
     </CHeading>

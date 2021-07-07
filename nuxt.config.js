@@ -1,4 +1,4 @@
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLinkAlt, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import customTheme from './custom-theme'
 
@@ -96,6 +96,7 @@ export default {
         faExternalLinkAlt,
         faGithub,
         faLinkedinIn,
+        faBars
       },
     },
   },

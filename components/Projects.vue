@@ -76,13 +76,13 @@ export default Vue.extend({
 }
 
 .project-list:nth-of-type(2n + 1) .project-links {
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   margin-left: 0;
 }
 
-.project-list:nth-of-type(2n + 1) .project-tech-list {
+/* .project-list:nth-of-type(2n + 1) .project-tech-list {
   justify-content: flex-end;
-}
+} */
 
 .project-list:nth-of-type(2n + 1) .project-tech-list li {
   margin: 0px 0px 5px 20px;

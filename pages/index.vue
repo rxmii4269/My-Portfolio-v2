@@ -7,6 +7,7 @@
       align-items="flex-start"
       justify-content="center"
       min-height="100vh"
+      :text-align="['center', 'center', 'unset']"
     >
       <CHeading as="h1" size="sm" color="var(--blue)">Hi, my name is</CHeading>
       <CHeading as="h2" size="xl" font-size="80px" color="gray.300"
@@ -37,6 +38,7 @@
         border-color="var(--blue)"
         :_hover="{ bg: 'rgba(118, 228, 247, 0.2)' }"
         :_active="{ bg: 'rgba(118, 228, 247, 0.2)' }"
+        :align-self="['center', 'center', 'unset']"
         >Get In Touch</CButton
       >
     </CBox>

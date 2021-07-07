@@ -13,11 +13,18 @@
       white-space="nowrap"
       line-height="1.1"
       color="gray.400"
+      :px="['1rem', '1rem', '0']"
       >About Me</CHeading
     >
-    <CBox d="grid" grid-template-columns="3fr 2fr" gap="50px">
+    <CBox
+      :d="['flex', 'grid', 'grid']"
+      grid-template-columns="3fr 2fr"
+      :gap="['0px', '50px']"
+      :flex-direction="['column', 'unset', 'unset']"
+      :align-items="['center', 'unset']"
+    >
       <CBox>
-        <CBox>
+        <CBox :px="['1rem', '1rem', '0rem']">
           <CText color="gray.500"
             >Hello! My name is Romaine and I enjoy creating things that live on
             the internet. My interest in web development began when I took a web
@@ -49,6 +56,7 @@
           d="grid"
           grid-template-columns="repeat(2, minmax(140px, 200px))"
           mt="20px"
+          :ml="['1rem', '0', '0']"
           overflow="hidden"
           list-style="none"
           color="gray.400"
@@ -76,6 +84,7 @@
             src="/me.jpg"
             alt="me"
             class="image-me"
+            sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
           ></nuxt-picture
         ></CBox>
       </CBox>
@@ -131,7 +140,7 @@ export default Vue.extend({
   font-size: 1rem;
 }
 
-.me{
+.me {
   position: relative;
   z-index: 1;
 }
@@ -148,5 +157,10 @@ export default Vue.extend({
   left: 20px;
   max-height: 100%;
   z-index: -1;
+}
+@media screen and (max-width: 320px) {
+  .me:after {
+    left: 7px;
+  }
 }
 </style>

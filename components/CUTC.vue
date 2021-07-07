@@ -2,13 +2,14 @@
   <CListItem
     class="project-list"
     position="relative"
-    display="grid"
+    :display="['flex', 'flex', 'flex', 'grid']"
+    :flex-direction="['column', 'column', 'column']"
     gap="10px"
     grid-template-columns="repeat(12,1fr)"
     align-items="center"
   >
     <CBox class="project-content">
-      <CBox>
+      <CBox :text-align="['center', 'center', 'right', 'right']">
         <CText my="10px" color="var(--blue)" font-size="18px" font-weight="500"
           >Featured Project</CText
         >
@@ -39,6 +40,7 @@
           mb="10px"
           p="0"
           color="gray.400"
+          :justify-content="['center', 'flex-end', 'flex-end']"
         >
           <CListItem>Vue</CListItem>
           <CListItem>Nuxt.js</CListItem>
@@ -51,6 +53,7 @@
           position="relative"
           mt="10px"
           color="gray.400"
+          :justify-content="['center', 'center', 'flex-end']"
         >
           <CLink
             color="gray.400"

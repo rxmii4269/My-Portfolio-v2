@@ -58,6 +58,7 @@
               </CList>
             </CBox>
             <Nuxt />
+
             <CBox
               w="40px"
               position="fixed"
@@ -100,6 +101,7 @@
                 </CListItem>
               </CList>
             </CBox>
+            <Footer />
           </CFlex>
         </CBox>
       </CColorModeProvider>

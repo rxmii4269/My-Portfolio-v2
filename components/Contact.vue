@@ -4,6 +4,7 @@
     as="section"
     max-width="600px"
     margin="0px auto 100px"
+    mb="0px"
     text-align="center"
     py="100px"
   >
