@@ -19,7 +19,10 @@
     >
       <CPseudoBox w="40px" h="40px"> <Logo /> </CPseudoBox>
     </CLink>
-    <CFlex :d="['none', 'none', 'flex']">
+    <CFlex
+      :d="['none', 'none', 'flex']"
+      :flex-wrap="['nowrap', 'wrap', 'nowrap']"
+    >
       <CList
         d="flex"
         flex-direction="row"
@@ -27,6 +30,7 @@
         list-style="none"
         color="gray.400"
         align-items="center"
+        :flex-wrap="['wrap', 'wrap', 'nowrap']"
       >
         <CListItem
           class="nav-list-wrapper"
@@ -99,10 +103,115 @@
         >Resume</CButton
       >
     </CFlex>
+    <CIconButton icon="bars" bg="var(--blue)" color="blue.900" aria-label="menu-button" :display="['block', 'block', 'none']" @click="toggleDrawer" />
+    <CDrawer :is-open="isOpen" placement="right" :on-close="close" background-color="blue.900">
+      <CDrawerOverlay />
+      <CDrawerContent background-color="blue.900">
+        <CDrawerCloseButton color="gray.400" />
+        <CDrawerHeader border-bottom-width="1px" color="gray.400">Menu</CDrawerHeader>
+        <CDrawerBody>
+          <CList
+            d="flex"
+            flex-direction="column"
+            as="ol"
+            list-style="none"
+            color="gray.400"
+            :flex-wrap="['wrap', 'wrap', 'nowrap']"
+            font-size="2.4rem"
+            spacing="3"
+          >
+            <CListItem
+              class="nav-list-wrapper"
+              mx="5px"
+              counter-increment="item 1"
+              ><CLink
+                as="nuxt-link"
+                :_focus="{
+                  outline: '2px dashed #76e4f7',
+                  outlineOffset: '3px',
+                }"
+                p="10px"
+                class="nav-list"
+                to="/#about"
+                >About</CLink
+              ></CListItem
+            >
+            <CListItem
+              class="nav-list-wrapper"
+              mx="5px"
+              counter-increment="item 1"
+              ><CLink
+                as="nuxt-link"
+                :_focus="{
+                  outline: '2px dashed #76e4f7',
+                  outlineOffset: '3px',
+                }"
+                p="10px"
+                class="nav-list"
+                to="/#jobs"
+                >Experience</CLink
+              ></CListItem
+            >
+            <CListItem
+              class="nav-list-wrapper"
+              mx="5px"
+              counter-increment="item 1"
+              ><CLink
+                as="nuxt-link"
+                :_focus="{
+                  outline: '2px dashed #76e4f7',
+                  outlineOffset: '3px',
+                }"
+                p="10px"
+                class="nav-list"
+                to="/#projects"
+                >Work</CLink
+              ></CListItem
+            >
+            <CListItem
+              class="nav-list-wrapper"
+              mx="5px"
+              counter-increment="item 1"
+              ><CLink
+                as="nuxt-link"
+                :_focus="{
+                  outline: '2px dashed #76e4f7',
+                  outlineOffset: '3px',
+                }"
+                p="10px"
+                class="nav-list"
+                to="/#contact"
+                >Contact</CLink
+              ></CListItem
+            >
+          </CList>
+          <CButton
+            as="a"
+            href="/resume.pdf"
+            variant="outline"
+            size="lg"
+            :py="['1.1rem', 'inherit']"
+            :px="['1rem', 'inherit']"
+            :ml="['0px', '0px', '15px']"
+            :width="['100%', 'inherit']"
+            mt="1rem"
+            color="#76e4f7"
+            border-color="#76e4f7"
+            :_hover="{ bg: 'rgba(118, 228, 247, 0.2)' }"
+            >Resume</CButton
+          >
+        </CDrawerBody>
+      </CDrawerContent>
+    </CDrawer>
   </CBox>
 </template>
 <script>
 export default {
+  data() {
+    return {
+      isOpen: false,
+    }
+  },
   mounted() {
     const animeLinks = this.$el.getElementsByClassName('nav-list-wrapper')
     this.$anime({
@@ -111,6 +220,14 @@ export default {
       delay: this.$anime.stagger(300, { easing: 'easeInQuad' }),
       loop: true,
     })
+  },
+  methods: {
+    toggleDrawer() {
+      this.isOpen = !this.isOpen
+    },
+    close () {
+      this.isOpen = false
+    }
   },
 }
 </script>
