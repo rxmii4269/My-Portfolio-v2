@@ -2,7 +2,7 @@
   <CListItem
     class="project-list"
     position="relative"
-    :display="['flex','flex', 'flex', 'grid']"
+    :display="['flex', 'flex', 'flex', 'grid']"
     :flex-direction="['column', 'column', 'column']"
     gap="10px"
     grid-template-columns="repeat(12,1fr)"
@@ -13,8 +13,8 @@
         <CText my="10px" color="var(--blue)" font-size="18px" font-weight="500"
           >Featured Project</CText
         >
-        <CHeading mb="20px" as="h3" color="gray.400" font-size="24px"
-          >Geek2Door Admin</CHeading
+        <CHeading mb="20px" as="h3" color="gray.400" font-size="22px"
+          >Weather App</CHeading
         >
         <CBox
           box-shadow="0 10px 30px -15px #1A202C"
@@ -27,14 +27,7 @@
           color="gray.400"
           font-size="16px"
         >
-          Monitor information on students and internships alike from
-          <CLink
-            color="var(--blue)"
-            href="https://geek2door.rmtech.tk"
-            is-external
-            >Geek2Door</CLink
-          >
-          in central area.
+          Get your current weather and 5 day forecast with an elegant and clean interface.
         </CBox>
         <CList
           class="project-tech-list"
@@ -47,13 +40,12 @@
           p="0"
           color="gray.400"
           :justify-content="['center', 'flex-start', 'flex-start']"
-
         >
           <CListItem>Vue</CListItem>
-          <CListItem>Nuxt.js</CListItem>
-          <CListItem>Buefy</CListItem>
-          <CListItem>Flask</CListItem>
-          <CListItem>PostgreSQL</CListItem>
+          <CListItem>TailWindCSS</CListItem>
+          <CListItem>PWA</CListItem>
+          <CListItem>Open Weather API</CListItem>
+          <CListItem>Maps Geocoding API</CListItem>
         </CList>
         <CFlex
           class="project-links"
@@ -61,19 +53,18 @@
           position="relative"
           mt="10px"
           color="gray.400"
-                    :justify-content="['center', 'center', 'flex-start']"
-
+          :justify-content="['center', 'center', 'flex-start']"
         >
           <CLink
             color="gray.400"
-            href="https://github.com/rxmii4269/Geek2Door-Admin"
+            href="https://github.com/rxmii4269/weather-app"
             is-external
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
           <CLink
             color="gray.400"
-            href="https://admin.geek2door.rmtech.tk"
+            href="https://weather.rmtech.tk"
             is-external
           >
             <CIcon font-size="20px" name="external-link-alt" />
@@ -82,10 +73,10 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://admin.geek2door.rmtech.tk" is-external>
+      <CLink href="https://weather.rmtech.tk" is-external>
         <CBox max-width="700px" d="block">
           <nuxt-picture
-            src="/admin.geek2door.rmtech.tk.png"
+            src="/weather.rmtech.tk.png"
             quality="100"
             format="webp"
           ></nuxt-picture>
@@ -94,3 +85,4 @@
     </CBox>
   </CListItem>
 </template>
+

@@ -27,6 +27,7 @@
       <Geek2Door />
       <Geek2DoorAdmin />
       <QuizApp />
+      <WeatherApp />
       <CUTC />
     </CList>
   </CBox>
