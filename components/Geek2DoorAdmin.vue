@@ -31,6 +31,7 @@
           <CLink
             color="var(--blue)"
             href="https://geek2door.rmtech.tk"
+            title="Geek2Door Admin"
             is-external
             >Geek2Door</CLink
           >
@@ -67,6 +68,7 @@
           <CLink
             color="gray.400"
             href="https://github.com/rxmii4269/Geek2Door-Admin"
+            title="Geek2Door Admin github"
             is-external
           >
             <CIcon font-size="20px" name="github"></CIcon>
@@ -74,6 +76,7 @@
           <CLink
             color="gray.400"
             href="https://admin.geek2door.rmtech.tk"
+            title="Geek2Door Admin Website"
             is-external
           >
             <CIcon font-size="20px" name="external-link-alt" />
@@ -82,12 +85,14 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://admin.geek2door.rmtech.tk" is-external>
+      <CLink href="https://admin.geek2door.rmtech.tk" is-external title="Geek2Door Admin Website">
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/admin.geek2door.rmtech.tk.png"
             quality="100"
             format="webp"
+            alt="geek2door admin image"
+
           ></nuxt-picture>
         </CBox>
       </CLink>

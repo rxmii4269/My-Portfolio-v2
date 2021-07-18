@@ -41,6 +41,7 @@
               ><CLink
                 color="var(--blue)"
                 href="https://knightfoxapps.com"
+                title="KnightFox App Design"
                 is-external
                 >KnightFox App Design</CLink
               >
@@ -67,7 +68,7 @@
             <CHeading mb="2px" as="h3" color="gray.400" font-size="20px">
               Junior Front End Developer
               <CText as="span" color="var(--blue)">@ </CText>
-              <CLink color="var(--blue)" href="https://1on1lms.com" is-external>
+              <CLink color="var(--blue)" href="https://1on1lms.com" is-external title="One on One Educational Services">
                 One on One Educational Services
               </CLink>
             </CHeading>
@@ -85,6 +86,7 @@
                 <CLink
                   color="var(--blue)"
                   href="https://bahamas.1on1lms.com/"
+                  title="Bahamas LMS"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
@@ -100,6 +102,7 @@
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
                   }"
+                  title="OneX LMS"
                   is-external
                   >Jamaica</CLink
                 >.</CListItem
@@ -109,6 +112,7 @@
                 <CLink
                   color="var(--blue)"
                   href="https://beta.flowstudy.co"
+                  title="Flow Study"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',

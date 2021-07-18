@@ -58,6 +58,7 @@
           <CLink
             color="gray.400"
             href="https://github.com/rxmii4269/weather-app"
+            title="Weather App Github"
             is-external
           >
             <CIcon font-size="20px" name="github"></CIcon>
@@ -66,6 +67,7 @@
             color="gray.400"
             href="https://weather.rmtech.tk"
             is-external
+            title="Weather App Github"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -73,12 +75,13 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://weather.rmtech.tk" is-external>
+      <CLink href="https://weather.rmtech.tk" is-external title="Weather App Website">
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/weather.rmtech.tk.png"
             quality="100"
             format="webp"
+            alt="Weather App preview"
           ></nuxt-picture>
         </CBox>
       </CLink>

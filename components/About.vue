@@ -35,6 +35,7 @@
           <CText color="gray.500" mb="4"
             >Fast-foward to today, and I've had the privilege of working at
             <CLink href="https://1on1lms.com/" is-external color="var(--blue)"
+            title="One on One Educational Services"
               >a start-up</CLink
             >
             that really helped me with sharpening and honing my skills as a
@@ -44,6 +45,7 @@
               href="http://knightfoxapps.com/"
               is-external
               color="var(--blue)"
+              title="KnightFox App Design"
               >KnightFox App Design</CLink
             >
             for a variety of clients.</CText

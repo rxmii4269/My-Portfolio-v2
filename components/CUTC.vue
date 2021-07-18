@@ -59,6 +59,7 @@
             color="gray.400"
             href="https://github.com/rxmii4269/JUTC-Maintainance"
             is-external
+            title="CUTC Maintainence System Github"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -66,6 +67,7 @@
             color="gray.400"
             href="https://flamboyant-nobel-29426f.netlify.app"
             is-external
+            title="CUTC Maintainence System Webpage"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -73,12 +75,14 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://flamboyant-nobel-29426f.netlify.app" is-external>
+      <CLink href="https://flamboyant-nobel-29426f.netlify.app" is-external             title="CUTC Maintainence System Webpage"
+>
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/flamboyant-nobel-29426f.netlify.app.png"
             quality="100"
             format="webp"
+            alt="Task Management System preview"
           ></nuxt-picture>
         </CBox>
       </CLink>

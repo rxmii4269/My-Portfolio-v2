@@ -32,7 +32,6 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
-
   loadingIndicator: {
     name: 'folding-cube',
     color: '#76e4f7',
@@ -40,7 +39,7 @@ export default {
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/anime.js'],
+  plugins: ['@/plugins/animate.css.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -96,7 +95,7 @@ export default {
         faExternalLinkAlt,
         faGithub,
         faLinkedinIn,
-        faBars
+        faBars,
       },
     },
   },

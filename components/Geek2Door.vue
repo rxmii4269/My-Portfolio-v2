@@ -60,12 +60,14 @@
             color="gray.400"
             href="https://github.com/rxmii4269/Geek2Door-Frontend"
             is-external
+            title="Geek2Door Frontend Github"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
           <CLink
             color="gray.400"
             href="https://geek2door.rmtech.tk"
+            title="Geek2Door"
             is-external
           >
             <CIcon font-size="20px" name="external-link-alt" />
@@ -74,12 +76,13 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://geek2door.rmtech.tk" is-external>
+      <CLink href="https://geek2door.rmtech.tk" is-external title="Geek2Door">
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/geek2door.rmtech.tk.png"
             quality="100"
             format="webp"
+            alt="geek2door image"
           ></nuxt-picture>
         </CBox>
       </CLink>

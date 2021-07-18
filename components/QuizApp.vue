@@ -59,22 +59,24 @@
             color="gray.400"
             href="https://github.com/rxmii4269/quizz-app"
             is-external
+            title="Quiz App Github"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
-          <CLink color="gray.400" href="https://quizzapp.rmtech.tk" is-external>
+          <CLink color="gray.400" href="https://quizzapp.rmtech.tk" is-external title="Quiz App Website">
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
         </CFlex>
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://quizzapp.rmtech.tk" is-external>
+      <CLink href="https://quizzapp.rmtech.tk" is-external title="Quiz App Website">
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/quizzapp.rmtech.tk.png"
             quality="100"
             format="webp"
+            alt="Country Quiz preview"
           ></nuxt-picture>
         </CBox>
       </CLink>

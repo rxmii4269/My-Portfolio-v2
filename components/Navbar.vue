@@ -16,8 +16,9 @@
       to="/"
       font-weight="bold"
       :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
+      title="Home"
     >
-      <CPseudoBox w="40px" h="40px"> <Logo /> </CPseudoBox>
+      <CPseudoBox class="animate__animated animate__fadeInDown" w="40px" h="40px"> <Logo /> </CPseudoBox>
     </CLink>
     <CFlex
       :d="['none', 'none', 'flex']"
@@ -33,7 +34,7 @@
         :flex-wrap="['wrap', 'wrap', 'nowrap']"
       >
         <CListItem
-          class="nav-list-wrapper"
+          class="nav-list-wrapper animate__animated animate__fadeInDown"
           font-size="0.9rem"
           mx="5px"
           counter-increment="item 1"
@@ -43,11 +44,12 @@
             p="10px"
             class="nav-list"
             to="/#about"
+            title="About Me"
             >About</CLink
           ></CListItem
         >
         <CListItem
-          class="nav-list-wrapper"
+          class="nav-list-wrapper animate__animated animate__fadeInDown"
           font-size="0.9rem"
           mx="5px"
           counter-increment="item 1"
@@ -57,11 +59,12 @@
             p="10px"
             class="nav-list"
             to="/#jobs"
+            title="Job Experience"
             >Experience</CLink
           ></CListItem
         >
         <CListItem
-          class="nav-list-wrapper"
+          class="nav-list-wrapper animate__animated animate__fadeInDown"
           font-size="0.9rem"
           mx="5px"
           counter-increment="item 1"
@@ -71,11 +74,12 @@
             p="10px"
             class="nav-list"
             to="/#projects"
+            title="Projects"
             >Work</CLink
           ></CListItem
         >
         <CListItem
-          class="nav-list-wrapper"
+          class="nav-list-wrapper animate__animated animate__fadeInDown"
           font-size="0.9rem"
           mx="5px"
           counter-increment="item 1"
@@ -85,6 +89,7 @@
             p="10px"
             class="nav-list"
             to="/#contact"
+            title="Get In Touch"
             >Contact</CLink
           ></CListItem
         >
@@ -100,15 +105,30 @@
         color="#76e4f7"
         border-color="#76e4f7"
         :_hover="{ bg: 'rgba(118, 228, 247, 0.2)' }"
+        class="animate__animated animate__fadeInDown"
         >Resume</CButton
       >
     </CFlex>
-    <CIconButton icon="bars" bg="var(--blue)" color="blue.900" aria-label="menu-button" :display="['block', 'block', 'none']" @click="toggleDrawer" />
-    <CDrawer :is-open="isOpen" placement="right" :on-close="close" background-color="blue.900">
+    <CIconButton
+      icon="bars"
+      bg="var(--blue)"
+      color="blue.900"
+      aria-label="menu-button"
+      :display="['block', 'block', 'none']"
+      @click="toggleDrawer"
+    />
+    <CDrawer
+      :is-open="isOpen"
+      placement="right"
+      :on-close="close"
+      background-color="blue.900"
+    >
       <CDrawerOverlay />
       <CDrawerContent background-color="blue.900">
         <CDrawerCloseButton color="gray.400" />
-        <CDrawerHeader border-bottom-width="1px" color="gray.400">Menu</CDrawerHeader>
+        <CDrawerHeader border-bottom-width="1px" color="gray.400"
+          >Menu</CDrawerHeader
+        >
         <CDrawerBody>
           <CList
             d="flex"
@@ -133,6 +153,7 @@
                 p="10px"
                 class="nav-list"
                 to="/#about"
+                title="About Me"
                 >About</CLink
               ></CListItem
             >
@@ -149,6 +170,7 @@
                 p="10px"
                 class="nav-list"
                 to="/#jobs"
+                title="Job Experience"
                 >Experience</CLink
               ></CListItem
             >
@@ -165,6 +187,7 @@
                 p="10px"
                 class="nav-list"
                 to="/#projects"
+                title="Projects"
                 >Work</CLink
               ></CListItem
             >
@@ -181,6 +204,7 @@
                 p="10px"
                 class="nav-list"
                 to="/#contact"
+                title="Get In Touch"
                 >Contact</CLink
               ></CListItem
             >
@@ -212,22 +236,14 @@ export default {
       isOpen: false,
     }
   },
-  mounted() {
-    const animeLinks = this.$el.getElementsByClassName('nav-list-wrapper')
-    this.$anime({
-      targets: animeLinks,
-      translate: 270,
-      delay: this.$anime.stagger(300, { easing: 'easeInQuad' }),
-      loop: true,
-    })
-  },
+  mounted() {},
   methods: {
     toggleDrawer() {
       this.isOpen = !this.isOpen
     },
-    close () {
+    close() {
       this.isOpen = false
-    }
+    },
   },
 }
 </script>
@@ -237,5 +253,29 @@ export default {
   margin-right: 5px;
   text-align: right;
   color: #76e4f7;
+}
+.animate__animated.animate__fadeInDown:first-of-type {
+  --animate-delay: 0.9s;
+  --animate-duration: 0.3s;
+}
+
+.animate__animated.animate__fadeInDown:nth-of-type(2) {
+  --animate-delay: 1.2s;
+  --animate-duration: 0.5s;
+}
+
+.animate__animated.animate__fadeInDown:nth-of-type(3) {
+  --animate-delay: 1.4s;
+  --animate-duration: 0.7s;
+}
+
+.animate__animated.animate__fadeInDown:nth-of-type(4) {
+  --animate-delay: 1.5s;
+  --animate-duration: 0.9s;
+}
+
+.animate__animated.animate__fadeInDown:last-of-type{
+  --animate-delay: 1.7s;
+  --animate-duration: 1.2s;
 }
 </style>

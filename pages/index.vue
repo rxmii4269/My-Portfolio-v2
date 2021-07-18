@@ -8,6 +8,7 @@
       justify-content="center"
       min-height="100vh"
       :text-align="['center', 'center', 'unset']"
+      class="animate__animated animate__fadeInUp"
     >
       <CHeading as="h1" size="sm" color="var(--blue)">Hi, my name is</CHeading>
       <CHeading as="h2" size="xl" font-size="80px" color="gray.300"
@@ -21,6 +22,7 @@
         exceptional digital experiences using modern frontend libraries.
         Currently, I'm a freelancer working for
         <CLink href="http://knightfoxapps.com/" is-external color="var(--blue)"
+        title="KnightFox App Design"
           >KnightFox App Design</CLink
         >
         focused on building accessible and performant, and user friendly
