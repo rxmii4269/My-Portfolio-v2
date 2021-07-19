@@ -70,6 +70,7 @@
             href="https://github.com/rxmii4269/Geek2Door-Admin"
             title="Geek2Door Admin github"
             is-external
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -78,6 +79,7 @@
             href="https://admin.geek2door.rmtech.tk"
             title="Geek2Door Admin Website"
             is-external
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>

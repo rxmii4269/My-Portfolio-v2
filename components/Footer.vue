@@ -6,6 +6,7 @@
         href="https://github.com/rxmii4269"
         is-external
         title="My Github"
+        
       >
         <CIcon font-size="25px" name="github" />
       </CLink>

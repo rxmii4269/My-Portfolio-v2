@@ -61,6 +61,7 @@
             href="https://github.com/rxmii4269/Geek2Door-Frontend"
             is-external
             title="Geek2Door Frontend Github"
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -69,6 +70,7 @@
             href="https://geek2door.rmtech.tk"
             title="Geek2Door"
             is-external
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>

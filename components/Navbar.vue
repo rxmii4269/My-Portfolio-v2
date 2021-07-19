@@ -18,7 +18,13 @@
       :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
       title="Home"
     >
-      <CPseudoBox class="animate__animated animate__fadeInDown" w="40px" h="40px"> <Logo /> </CPseudoBox>
+      <CPseudoBox
+        class="animate__animated animate__fadeInDown"
+        w="40px"
+        h="40px"
+      >
+        <Logo />
+      </CPseudoBox>
     </CLink>
     <CFlex
       :d="['none', 'none', 'flex']"
@@ -41,6 +47,7 @@
           ><CLink
             as="nuxt-link"
             :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
+            :_hover="{ color: 'var(--blue)' }"
             p="10px"
             class="nav-list"
             to="/#about"
@@ -56,6 +63,7 @@
           ><CLink
             as="nuxt-link"
             :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
+             :_hover="{color: 'var(--blue)'}"
             p="10px"
             class="nav-list"
             to="/#jobs"
@@ -71,6 +79,7 @@
           ><CLink
             as="nuxt-link"
             :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
+             :_hover="{color: 'var(--blue)'}"
             p="10px"
             class="nav-list"
             to="/#projects"
@@ -86,6 +95,7 @@
           ><CLink
             as="nuxt-link"
             :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
+             :_hover="{color: 'var(--blue)'}"
             p="10px"
             class="nav-list"
             to="/#contact"
@@ -105,6 +115,8 @@
         color="#76e4f7"
         border-color="#76e4f7"
         :_hover="{ bg: 'rgba(118, 228, 247, 0.2)' }"
+        :_focus="{ bg: 'rgba(118, 228, 247, 0.2)', outline: 'none' }"
+        :_active="{ bg: 'unset' }"
         class="animate__animated animate__fadeInDown"
         >Resume</CButton
       >
@@ -126,7 +138,7 @@
       <CDrawerOverlay />
       <CDrawerContent background-color="blue.900">
         <CDrawerCloseButton color="gray.400" />
-        <CDrawerHeader border-bottom-width="1px" color="gray.400"
+        <CDrawerHeader border-bottom-width="1px" border-color="gray.500" color="gray.400"
           >Menu</CDrawerHeader
         >
         <CDrawerBody>
@@ -150,8 +162,10 @@
                   outline: '2px dashed #76e4f7',
                   outlineOffset: '3px',
                 }"
+                :_hover="{ color: 'var(--blue)' }"
                 p="10px"
-                class="nav-list"
+                class="nav-list animate__animated animate__fadeInDown"
+
                 to="/#about"
                 title="About Me"
                 >About</CLink
@@ -167,8 +181,9 @@
                   outline: '2px dashed #76e4f7',
                   outlineOffset: '3px',
                 }"
+                 :_hover="{color: 'var(--blue)'}"
                 p="10px"
-                class="nav-list"
+                class="nav-list animate__animated animate__fadeInDown"
                 to="/#jobs"
                 title="Job Experience"
                 >Experience</CLink
@@ -184,8 +199,9 @@
                   outline: '2px dashed #76e4f7',
                   outlineOffset: '3px',
                 }"
+                 :_hover="{color: 'var(--blue)'}"
                 p="10px"
-                class="nav-list"
+                class="nav-list animate__animated animate__fadeInDown"
                 to="/#projects"
                 title="Projects"
                 >Work</CLink
@@ -201,8 +217,9 @@
                   outline: '2px dashed #76e4f7',
                   outlineOffset: '3px',
                 }"
+                 :_hover="{color: 'var(--blue)'}"
                 p="10px"
-                class="nav-list"
+                class="nav-list animate__animated animate__fadeInDown"
                 to="/#contact"
                 title="Get In Touch"
                 >Contact</CLink
@@ -222,6 +239,7 @@
             color="#76e4f7"
             border-color="#76e4f7"
             :_hover="{ bg: 'rgba(118, 228, 247, 0.2)' }"
+            :_active="{ bg: 'unset' }"
             >Resume</CButton
           >
         </CDrawerBody>
@@ -274,7 +292,7 @@ export default {
   --animate-duration: 0.9s;
 }
 
-.animate__animated.animate__fadeInDown:last-of-type{
+.animate__animated.animate__fadeInDown:last-of-type {
   --animate-delay: 1.7s;
   --animate-duration: 1.2s;
 }

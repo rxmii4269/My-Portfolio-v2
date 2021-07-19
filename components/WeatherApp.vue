@@ -60,6 +60,7 @@
             href="https://github.com/rxmii4269/weather-app"
             title="Weather App Github"
             is-external
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -68,6 +69,7 @@
             href="https://weather.rmtech.tk"
             is-external
             title="Weather App Github"
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>

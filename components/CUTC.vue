@@ -60,6 +60,7 @@
             href="https://github.com/rxmii4269/JUTC-Maintainance"
             is-external
             title="CUTC Maintainence System Github"
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -68,6 +69,7 @@
             href="https://flamboyant-nobel-29426f.netlify.app"
             is-external
             title="CUTC Maintainence System Webpage"
+             :_hover="{color: 'var(--blue)'}"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
