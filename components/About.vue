@@ -30,7 +30,7 @@
             the internet. My interest in web development began when I took a web
             development course just to gain extra credits and ended up falling
             in love with the whole process of creating amazing and useful web
-            apps ranging from quirky to useful utilitarian.</CText
+            apps ranging from quirky to utilitarian.</CText
           >
           <CText color="gray.500" mb="4"
             >Fast-foward to today, and I've had the privilege of working at
