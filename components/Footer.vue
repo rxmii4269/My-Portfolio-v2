@@ -6,7 +6,7 @@
         href="https://github.com/rxmii4269"
         is-external
         title="My Github"
-        
+        mx="0.5rem"
       >
         <CIcon font-size="25px" name="github" />
       </CLink>
@@ -15,6 +15,7 @@
         :_hover="{ color: 'var(--blue)' }"
         href="https://www.linkedin.com/in/romaine-murray-a497a4194/"
         is-external
+        mx="0.5rem"
       >
         <CIcon font-size="25px" name="linkedin-in"></CIcon>
       </CLink>
