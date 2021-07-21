@@ -1,6 +1,7 @@
 <template>
   <CBox
     id="contact"
+    v-animate-onscroll="'animate__animated animate__fadeInUp'"
     as="section"
     max-width="600px"
     margin="0px auto 100px"

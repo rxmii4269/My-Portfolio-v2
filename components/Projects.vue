@@ -24,11 +24,15 @@
       >Some Things I've Built
     </CHeading>
     <CList padding="0" margin="0">
-      <Geek2Door />
-      <Geek2DoorAdmin />
-      <QuizApp />
-      <WeatherApp />
-      <CUTC />
+      <Geek2Door v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
+      <Geek2DoorAdmin
+        v-animate-onscroll="'animate__animated animate__fadeInRight'"
+      />
+      <QuizApp v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
+      <WeatherApp
+        v-animate-onscroll="'animate__animated animate__fadeInRight'"
+      />
+      <CUTC v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
     </CList>
   </CBox>
 </template>

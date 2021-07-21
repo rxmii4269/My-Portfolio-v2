@@ -1,5 +1,5 @@
 <template>
-  <CBox id="about" as="section" max-width="900px" py="100px" my="0px" mx="auto">
+  <CBox id="about" v-animate-onscroll="'animate__animated animate__fadeInLeft '" as="section" max-width="900px" py="100px" my="0px" mx="auto">
     <CHeading
       d="flex"
       align-items="center"

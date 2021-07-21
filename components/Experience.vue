@@ -1,6 +1,7 @@
 <template>
   <CBox
     id="jobs"
+    v-animate-onscroll="'animate__animated animate__fadeInRight'"
     as="section"
     max-width="700px"
     margin="0px auto"
@@ -18,7 +19,7 @@
       line-height="1.1"
       color="gray.400"
       class="experience"
-      :flex-wrap="['wrap', 'wrap' , 'nowrap']"
+      :flex-wrap="['wrap', 'wrap', 'nowrap']"
     >
       Where I've Worked
     </CHeading>
@@ -34,7 +35,7 @@
           <CTab>One on One Educational Services</CTab>
         </CTabList>
         <CTabPanels margin-left="20px">
-          <CTabPanel>
+          <CTabPanel class="animate__animated animate__fadeIn">
             <CHeading mb="2px" as="h3" color="gray.400" font-size="20px"
               >Front End Developer
               <CText as="span" color="var(--blue)">@ </CText
@@ -64,11 +65,16 @@
               </CListItem>
             </CList>
           </CTabPanel>
-          <CTabPanel>
+          <CTabPanel class="animate__animated animate__fadeIn">
             <CHeading mb="2px" as="h3" color="gray.400" font-size="20px">
               Junior Front End Developer
               <CText as="span" color="var(--blue)">@ </CText>
-              <CLink color="var(--blue)" href="https://1on1lms.com" is-external title="One on One Educational Services">
+              <CLink
+                color="var(--blue)"
+                href="https://1on1lms.com"
+                is-external
+                title="One on One Educational Services"
+              >
                 One on One Educational Services
               </CLink>
             </CHeading>
@@ -134,55 +140,62 @@
     </CFlex>
   </CBox>
 </template>
-<style>
-.experience:before {
-  position: relative;
-  bottom: 1px;
-  counter-increment: section 2;
-  content: '0' counter(section) '.';
-  margin-right: 10px;
-  color: var(--blue);
-  font-size: 25px;
-}
-.experience:after {
-  content: '';
-  display: block;
-  position: relative;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #2d3748;
-}
+<style lang="scss">
+#jobs {
+  .experience:before {
+    position: relative;
+    bottom: 1px;
+    counter-increment: section 2;
+    content: '0' counter(section) '.';
+    margin-right: 10px;
+    color: var(--blue);
+    font-size: 25px;
+  }
+  .experience:after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #2d3748;
+  }
 
-.jobs-list > button {
-  border-left: 2px solid;
-  border-bottom: none;
-}
-.jobs-list > button:not([aria-selected='true']) {
-  color: #a0aec0;
-  border-left: none;
-}
-.jobs-list > button[aria-selected='true'] {
-  color: var(--blue);
-}
-.jobs-list > button:focus {
-  box-shadow: none;
-}
+  .jobs-list > button {
+    border-left: 2px solid transparent;
+    border-bottom: none;
+    transition: border-left 0.2s ease-in;
+  }
+  .jobs-list > button:not([aria-selected='true']) {
+    color: #a0aec0;
+    border-color: transparent;
+  }
+  .jobs-list > button[aria-selected='true'] {
+    color: var(--blue);
+    border-color: currentColor;
+  }
+  .jobs-list > button:focus {
+    box-shadow: none;
+  }
 
-.jobs-list > button:hover {
-  color: var(--blue);
-  background-color: #112240;
-}
+  .jobs-list > button:hover {
+    color: var(--blue);
+    background-color: #112240;
+  }
 
-.details > li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 30px;
-}
-.details > li:before {
-  content: '▹';
-  position: absolute;
-  left: 0px;
-  color: var(--blue);
+  .details > li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+  }
+  .details > li:before {
+    content: '▹';
+    position: absolute;
+    left: 0px;
+    color: var(--blue);
+  }
+  .animate__animated.animate__fadeIn {
+    --animate-delay: 0.2s;
+  }
 }
 </style>
