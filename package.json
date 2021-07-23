@@ -22,7 +22,7 @@
     "core-js": "^3.15.2",
     "fibers": "^5.0.0",
     "nuxt": "^2.15.7",
-    "sass-loader": "10",
+    "sass-loader": "11",
     "vue-animate-onscroll": "^1.0.8"
   },
   "devDependencies": {
