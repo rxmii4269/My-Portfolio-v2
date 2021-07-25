@@ -1,5 +1,5 @@
 <template>
-  <CBox as="main" flex-grow="1" :px="['0','0px','150px']">
+  <CBox as="main" flex-grow="1" :px="['0', '0px', '150px']">
     <CBox
       as="section"
       d="flex"
@@ -21,8 +21,11 @@
         >I'm a Jamaica-based software engineer who specializes in building
         exceptional digital experiences using modern frontend libraries.
         Currently, I'm a freelancer working for
-        <CLink href="http://knightfoxapps.com/" is-external color="var(--blue)"
-        title="KnightFox App Design"
+        <CLink
+          href="http://knightfoxapps.com/"
+          is-external
+          color="var(--blue)"
+          title="KnightFox App Design"
           >KnightFox App Design</CLink
         >
         focused on building accessible and performant, and user friendly
@@ -57,6 +60,18 @@ export default Vue.extend({
 
   data() {
     return {}
+  },
+  computed: {
+    scrollToElement() {
+      if (this.$route.hash) {
+        return this.$nextTick(() =>
+          document
+            .getElementById(this.$route.hash.split('#')[1])
+            ?.scrollIntoView({ behavior: 'smooth' })
+        )
+      }
+      return 1
+    },
   },
 })
 </script>

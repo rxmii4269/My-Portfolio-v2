@@ -1,5 +1,13 @@
 <template>
-  <CBox id="about" v-animate-onscroll="'animate__animated animate__fadeInLeft '" as="section" max-width="900px" py="100px" my="0px" mx="auto">
+  <CBox
+    id="about"
+    v-animate-onscroll="'animate__animated animate__fadeInLeft '"
+    as="section"
+    max-width="900px"
+    py="100px"
+    my="0px"
+    mx="auto"
+  >
     <CHeading
       d="flex"
       align-items="center"
@@ -34,8 +42,11 @@
           >
           <CText color="gray.500" mb="4"
             >Fast-foward to today, and I've had the privilege of working at
-            <CLink href="https://1on1lms.com/" is-external color="var(--blue)"
-            title="One on One Educational Services"
+            <CLink
+              href="https://1on1lms.com/"
+              is-external
+              color="var(--blue)"
+              title="One on One Educational Services"
               >a start-up</CLink
             >
             that really helped me with sharpening and honing my skills as a

@@ -146,7 +146,7 @@ export default {
   --blue: #76e4f7;
 }
 :focus {
-  outline: rgb(118,228,247) dashed 2px;
+  outline: rgb(118, 228, 247) dashed 2px;
   outline-offset: 3px;
   box-shadow: none !important;
 }
