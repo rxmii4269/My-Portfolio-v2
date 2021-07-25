@@ -8,11 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "prepare": "husky install",
     "lint": "yarn lint:js"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
   },
   "dependencies": {
     "@chakra-ui/nuxt": "^0.3.5",
@@ -40,8 +36,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.14.0",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.0",
     "prettier": "^2.3.2",
     "sass": "^1.35.2"
   }
