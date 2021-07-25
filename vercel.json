@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["package.json"]
+      }
+    }
+  ],
+  "headers": [
+    {
+      "source": "/_nuxt/(.+)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31557600"
+        }
+      ]
+    },
+    {
+      "source": "/(.+)\\.(png|jpg|jpeg|ico|txt)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31557600"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=43200, immutable"
+        },
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/"
+        }
+      ]
+    }
+  ]
+}

@@ -61,17 +61,14 @@ export default Vue.extend({
   data() {
     return {}
   },
-  computed: {
-    scrollToElement() {
-      if (this.$route.hash) {
-        return this.$nextTick(() =>
-          document
-            .getElementById(this.$route.hash.split('#')[1])
-            ?.scrollIntoView({ behavior: 'smooth' })
-        )
-      }
-      return 1
-    },
+  mounted() {
+    if (this.$route.hash) {
+      this.$nextTick(() =>
+        document
+          .getElementById(this.$route.hash.split('#')[1])
+          ?.scrollIntoView({ behavior: 'smooth' })
+      )
+    }
   },
 })
 </script>

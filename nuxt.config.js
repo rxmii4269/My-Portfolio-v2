@@ -4,14 +4,17 @@ import customTheme from './custom-theme'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Romaine Murray',
+    htmlAttrs:{
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -60,6 +63,7 @@ export default {
     '@nuxtjs/emotion',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/gtm'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -72,6 +76,10 @@ export default {
     meta: {
       theme_color: '#000A21',
     },
+  },
+
+  gtm: {
+    id: 'GTM-KPTZ2ZK',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
