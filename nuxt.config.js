@@ -52,7 +52,6 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/google-fonts',
-    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,7 +62,8 @@ export default {
     '@nuxtjs/emotion',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/gtm'
+    '@nuxtjs/gtm',
+    '@nuxt/image',
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
