@@ -37,6 +37,6 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.16.0",
     "prettier": "^2.3.2",
-    "sass": "^1.37.5"
+    "sass": "^1.38.0"
   }
 }
