@@ -64,6 +64,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/gtm',
     '@nuxt/image',
+    '@nuxtjs/sitemap'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -76,6 +77,11 @@ export default {
     meta: {
       theme_color: '#000A21',
     },
+  },
+
+  sitemap: {
+    hostname: 'https://romainemurray.rmtech.tk',
+    gzip:true,
   },
 
   gtm: {
