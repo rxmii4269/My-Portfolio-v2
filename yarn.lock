@@ -919,22 +919,28 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@chakra-ui/nuxt@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/nuxt/-/nuxt-0.4.1.tgz#ef03971f5f62dd2d4f8d133ff8333e28f6ca2cb2"
-  integrity sha512-scOmwPF39eCpLofVQA6MNahumZWN5DkRjxdU4OWEHHfRyguZwEBVk0ggUxDcGevQO7tw/0Po1+FtTo5r5d+TQw==
+"@chakra-ui/nuxt@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/nuxt/-/nuxt-0.4.2.tgz#e2adc4b9b99635cabbf7f60679357944fedcba1f"
+  integrity sha512-clsPD+H2+9eGRw723zeW/vpB3aL3aAxSO2MmSW5ESztww181Wz3tOA32pE4g52V22wbV/WcNSQ6RRaFVQKh+bw==
   dependencies:
-    "@chakra-ui/vue" "^0.10.1"
+    "@chakra-ui/theme-vue" "^0.3.2"
+    "@chakra-ui/vue" "^0.10.2"
     "@emotion/css" "^11.0.0"
     chakra-loader latest
 
-"@chakra-ui/styled-system@^1.12.1":
+"@chakra-ui/styled-system@^1.12.2":
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/styled-system/-/styled-system-1.12.2.tgz#918cedf92e12e3b3c053a4d6a8eeab9315d0980c"
   integrity sha512-wJvEgy93DLe0Tz2F9YFRTDnAz8YMC8O2Y0reI6WIDix0QL7dLWxrTA2reqMLaEmKnr965a/LDfyY21tWOB+6TQ==
   dependencies:
     "@chakra-ui/utils" "1.8.2"
     csstype "^3.0.6"
+
+"@chakra-ui/theme-vue@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-vue/-/theme-vue-0.3.2.tgz#76a2b3c11590cb58f8948738aef6c1c34d139ff0"
+  integrity sha512-h1jFMo0JWgtYAMJGCuc9u2znSBFfAVjVbYc/AB3LeZ6X6xNS0mAmu2gzS5daQK+OVTMROHbzXwI0Th+TsC0o1w==
 
 "@chakra-ui/utils@1.8.2":
   version "1.8.2"
@@ -946,12 +952,13 @@
     framesync "5.3.0"
     lodash.mergewith "4.6.2"
 
-"@chakra-ui/vue@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/vue/-/vue-0.10.1.tgz#8e56f1373e00e0e9044c8675944a5ffc76fcb6d9"
-  integrity sha512-UNO0qOe7gTA8zeXD3AoB9gY8iqOhxkkrQEOn06yXu1m0Mr5jfrMenKD/fiilufR7uiNZjGHejVFnUVwwHnXzRg==
+"@chakra-ui/vue@^0.10.2":
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/vue/-/vue-0.10.2.tgz#f9aa715aa70a9357ce45eca03ba400cf80163e5e"
+  integrity sha512-CzothsM61x9sD50DZupUuYaYQvCjnVPns7BeebAHr9UrndHBz3OHHVELltGdk1Mx4PsWS+IOxvrAZGOg0Shxkg==
   dependencies:
-    "@chakra-ui/styled-system" "^1.12.1"
+    "@chakra-ui/styled-system" "^1.12.2"
+    "@chakra-ui/theme-vue" "^0.3.2"
     "@popperjs/core" "^2.4.0"
     animejs "^3.1.0"
     aria-hidden "^1.1.1"
