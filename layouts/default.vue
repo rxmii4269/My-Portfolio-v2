@@ -46,7 +46,7 @@
                   <CIcon font-size="25px" name="github" />
                 </CLink>
               </CListItem>
-              <CListItem>
+              <CListItem mb="3">
                 <CLink
                   :_hover="{ color: 'var(--blue)' }"
                   href="https://www.linkedin.com/in/romaine-murray-a497a4194/"
@@ -91,9 +91,10 @@
                   my="2px"
                   mx="auto"
                   p="10px"
+                  font-weight="600"
                   line-height="18px"
                   letter-spacing="0.1em"
-                  writing-mode="vertical-rl"
+                  class="vertical"
                   href="mailto:romainemurray6@gmail.com"
                   is-external
                   :_hover="{ color: 'var(--blue)' }"
@@ -121,6 +122,10 @@ export default {
 }
 </script>
 <style lang="css">
+body {
+  counter-reset: item;
+  -moz-osx-font-smoothing: grayscale;
+}
 .clist:after {
   content: '';
 }
@@ -131,5 +136,8 @@ export default {
   outline: rgb(118, 228, 247) dashed 2px;
   outline-offset: 3px;
   box-shadow: none !important;
+}
+.vertical {
+  writing-mode: vertical-rl;
 }
 </style>

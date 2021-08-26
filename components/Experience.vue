@@ -176,6 +176,7 @@
   }
   .jobs-list > button:focus {
     box-shadow: none;
+    outline: none;
   }
 
   .jobs-list > button:hover {

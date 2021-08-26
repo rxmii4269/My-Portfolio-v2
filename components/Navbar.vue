@@ -266,8 +266,10 @@ export default {
 }
 </script>
 <style>
+
 .nav-list:before {
   content: '0' counter(item) '.';
+  counter-increment: item ;
   margin-right: 5px;
   text-align: right;
   color: #76e4f7;

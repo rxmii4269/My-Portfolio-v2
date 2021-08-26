@@ -129,7 +129,7 @@ export default Vue.extend({
 .about:before {
   position: relative;
   bottom: 1px;
-  counter-increment: section 1;
+  counter-increment: section;
   content: '0' counter(section) '.';
   margin-right: 10px;
   color: var(--blue);
