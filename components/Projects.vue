@@ -4,6 +4,7 @@
     as="section"
     max-width="900px"
     py="100px"
+    :px="['1rem', '1rem', '0']"
     my="0px"
     mx="auto"
   >
@@ -64,6 +65,11 @@ export default Vue.extend({
   height: 1px;
   margin-left: 20px;
   background-color: #2d3748;
+}
+@media screen and (min-width: 500px) and (max-width: 681px) {
+  .projects:after {
+    width: calc(100% - 400px);
+  }
 }
 .project-list:not(:last-of-type) {
   margin-bottom: 100px;
