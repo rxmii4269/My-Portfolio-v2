@@ -15,7 +15,7 @@
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/pwa": "^3.3.5",
     "animate.css": "^4.1.1",
-    "core-js": "^3.17.3",
+    "core-js": "^3.18.0",
     "fibers": "^5.0.0",
     "nuxt": "^2.15.8",
     "sass-loader": "10",
