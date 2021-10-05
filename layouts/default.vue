@@ -119,6 +119,11 @@ export default {
     CReset,
     CBox,
   },
+  methods: {
+    handleScroll(event) {
+      console.log(event)
+    },
+  },
 }
 </script>
 <style lang="css">
