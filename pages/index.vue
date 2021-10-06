@@ -10,7 +10,7 @@
       :text-align="['center', 'center', 'unset']"
       class="animate__animated animate__fadeInUp"
     >
-      <CHeading as="h1" size="sm" color="var(--blue)">Hi, my name is</CHeading>
+      <CHeading as="h1" size="sm" mb="5" color="var(--blue)">Hi, my name is</CHeading>
       <CHeading as="h2" size="xl" font-size="80px" color="gray.300"
         >Romaine Murray.</CHeading
       >

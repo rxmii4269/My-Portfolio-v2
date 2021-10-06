@@ -91,7 +91,6 @@
                   my="2px"
                   mx="auto"
                   p="10px"
-                  font-weight="600"
                   line-height="18px"
                   letter-spacing="0.1em"
                   class="vertical"
@@ -119,17 +118,28 @@ export default {
     CReset,
     CBox,
   },
-  methods: {
-    handleScroll(event) {
-      console.log(event)
-    },
-  },
+  methods: {},
 }
 </script>
 <style lang="css">
 body {
   counter-reset: item;
   -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #2d3748;
+  border: 3px solid #000a21;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #000a21;
+}
+::selection {
+  background-color: #003182;
+  color: #cbd5e0;
 }
 .clist:after {
   content: '';
