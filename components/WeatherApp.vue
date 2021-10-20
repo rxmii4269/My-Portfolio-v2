@@ -27,7 +27,8 @@
           color="gray.400"
           font-size="16px"
         >
-          Get your current weather and 5 day forecast with an elegant and clean interface.
+          Get your current weather and 5 day forecast with an elegant and clean
+          interface.
         </CBox>
         <CList
           class="project-tech-list"
@@ -60,7 +61,7 @@
             href="https://github.com/rxmii4269/weather-app"
             title="Weather App Github"
             is-external
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -69,7 +70,7 @@
             href="https://weather.rmtech.tk"
             is-external
             title="Weather App Github"
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -77,17 +78,21 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://weather.rmtech.tk" is-external title="Weather App Website">
+      <CLink
+        href="https://weather.rmtech.tk"
+        is-external
+        title="Weather App Website"
+      >
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/weather.rmtech.tk.png"
             quality="100"
             format="webp"
             alt="Weather App preview"
+            loading="lazy"
           ></nuxt-picture>
         </CBox>
       </CLink>
     </CBox>
   </CListItem>
 </template>
-

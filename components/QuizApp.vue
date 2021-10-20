@@ -88,6 +88,7 @@
             quality="100"
             format="webp"
             alt="Country Quiz preview"
+            loading="lazy"
           ></nuxt-picture>
         </CBox>
       </CLink>

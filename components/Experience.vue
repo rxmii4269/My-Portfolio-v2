@@ -15,7 +15,7 @@
       margin="10px 0px 40px"
       w="100%"
       font-size="32px"
-      white-space="nowrap"
+      :white-space="['','nowrap','nowrap']"
       line-height="1.1"
       color="gray.400"
       class="experience"

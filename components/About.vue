@@ -98,6 +98,7 @@
             alt="me"
             class="image-me"
             sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
+            loading="lazy"
           ></nuxt-picture
         ></CBox>
       </CBox>
@@ -174,6 +175,11 @@ export default Vue.extend({
 @media screen and (max-width: 320px) {
   .me:after {
     left: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .me::after {
+    left: 5px;
   }
 }
 </style>

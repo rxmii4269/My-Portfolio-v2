@@ -2,7 +2,7 @@
   <CListItem
     class="project-list"
     position="relative"
-    :display="['flex','flex', 'flex', 'grid']"
+    :display="['flex', 'flex', 'flex', 'grid']"
     :flex-direction="['column', 'column', 'column']"
     gap="10px"
     grid-template-columns="repeat(12,1fr)"
@@ -48,7 +48,6 @@
           p="0"
           color="gray.400"
           :justify-content="['center', 'flex-start', 'flex-start']"
-
         >
           <CListItem>Vue</CListItem>
           <CListItem>Nuxt.js</CListItem>
@@ -62,15 +61,14 @@
           position="relative"
           mt="10px"
           color="gray.400"
-                    :justify-content="['center', 'center', 'flex-start']"
-
+          :justify-content="['center', 'center', 'flex-start']"
         >
           <CLink
             color="gray.400"
             href="https://github.com/rxmii4269/Geek2Door-Admin"
             title="Geek2Door Admin github"
             is-external
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -79,7 +77,7 @@
             href="https://admin.geek2door.rmtech.tk"
             title="Geek2Door Admin Website"
             is-external
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -87,14 +85,18 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://admin.geek2door.rmtech.tk" is-external title="Geek2Door Admin Website">
+      <CLink
+        href="https://admin.geek2door.rmtech.tk"
+        is-external
+        title="Geek2Door Admin Website"
+      >
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/admin.geek2door.rmtech.tk.png"
             quality="100"
             format="webp"
             alt="geek2door admin image"
-
+            loading="lazy"
           ></nuxt-picture>
         </CBox>
       </CLink>

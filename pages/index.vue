@@ -1,5 +1,5 @@
 <template>
-  <CBox as="main" flex-grow="1" :px="['0', '0px', '150px']">
+  <CBox as="main" flex-grow="1" :px="['50px', '0px', '150px', '']">
     <CBox
       as="section"
       d="flex"
@@ -7,17 +7,25 @@
       align-items="flex-start"
       justify-content="center"
       min-height="100vh"
-      :text-align="['center', 'center', 'unset']"
+      w="100%"
+      :mt="['100px', '60px', '0', '0']"
+      :px="['10px', '10px', '10px']"
       class="animate__animated animate__fadeInUp"
     >
-      <CHeading as="h1" size="sm" mb="5" color="var(--blue)">Hi, my name is</CHeading>
-      <CHeading as="h2" size="xl" font-size="80px" color="gray.300"
+      <CHeading as="h1" size="sm" mb="5" color="var(--blue)"
+        >Hi, my name is</CHeading
+      >
+      <CHeading
+        as="h2"
+        size="xl"
+        :font-size="['40px', '80px', '80px']"
+        color="gray.300"
         >Romaine Murray.</CHeading
       >
-      <CHeading as="h2" font-size="80px" color="gray.500">
+      <CHeading as="h2" :font-size="['40px', '80px', '80px']" color="gray.500">
         I build things for the web.</CHeading
       >
-      <CText max-width="500px" color="gray.500"
+      <CText max-width="500px" color="gray.500" mt="20px"
         >I'm a Jamaica-based software engineer who specializes in building
         exceptional digital experiences using modern frontend libraries.
         Currently, I'm a freelancer working for
@@ -115,4 +123,3 @@ export default Vue.extend({
   },
 })
 </script>
-

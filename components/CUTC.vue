@@ -27,8 +27,8 @@
           color="gray.400"
           font-size="16px"
         >
-          Monitor all of your companies tasks: assign, comment on and
-          complete your tasks.
+          Monitor all of your companies tasks: assign, comment on and complete
+          your tasks.
         </CBox>
         <CList
           class="project-tech-list"
@@ -60,7 +60,7 @@
             href="https://github.com/rxmii4269/JUTC-Maintainance"
             is-external
             title="CUTC Maintainence System Github"
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -69,7 +69,7 @@
             href="https://flamboyant-nobel-29426f.netlify.app"
             is-external
             title="CUTC Maintainence System Webpage"
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -77,18 +77,21 @@
       </CBox>
     </CBox>
     <CBox class="project-image">
-      <CLink href="https://flamboyant-nobel-29426f.netlify.app" is-external             title="CUTC Maintainence System Webpage"
->
+      <CLink
+        href="https://flamboyant-nobel-29426f.netlify.app"
+        is-external
+        title="CUTC Maintainence System Webpage"
+      >
         <CBox max-width="700px" d="block">
           <nuxt-picture
             src="/flamboyant-nobel-29426f.netlify.app.png"
             quality="100"
             format="webp"
             alt="Task Management System preview"
+            loading="lazy"
           ></nuxt-picture>
         </CBox>
       </CLink>
     </CBox>
   </CListItem>
 </template>
-

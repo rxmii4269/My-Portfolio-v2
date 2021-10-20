@@ -16,8 +16,8 @@
   >
     <CBox
       as="nav"
-      h="100px"
-      :px="['10px', '10px', '50px']"
+      h="80px"
+      :px="['15px', '10px', '50px']"
       d="flex"
       align-items="center"
       justify-content="space-between"
@@ -152,8 +152,9 @@
       >
         <CDrawerOverlay />
         <CDrawerContent background-color="blue.900">
-          <CDrawerCloseButton color="gray.400" />
+          <!-- <CDrawerCloseButton color="gray.400" /> -->
           <CDrawerHeader
+            mt="80px"
             border-bottom-width="1px"
             border-color="gray.500"
             color="gray.400"
@@ -250,7 +251,7 @@
               size="lg"
               :py="['1.1rem', 'inherit']"
               :px="['1rem', 'inherit']"
-              :ml="['0px', '0px', '15px']"
+              :ml="['15px', '15px', '15px']"
               :width="['100%', 'inherit']"
               mt="1rem"
               color="#76e4f7"

@@ -18,7 +18,7 @@
       w="100%"
       font-size="32px"
       class="projects"
-      white-space="nowrap"
+      :white-space="['wrap', 'wrap', 'nowrap']"
       line-height="1.1"
       color="gray.400"
       :flex-wrap="['wrap', 'wrap', 'nowrap']"

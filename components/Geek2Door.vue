@@ -2,7 +2,7 @@
   <CListItem
     class="project-list"
     position="relative"
-    :display="['flex','flex', 'flex', 'grid']"
+    :display="['flex', 'flex', 'flex', 'grid']"
     :flex-direction="['column', 'column', 'column']"
     gap="10px"
     grid-template-columns="repeat(12,1fr)"
@@ -53,15 +53,14 @@
           position="relative"
           mt="10px"
           color="gray.400"
-                    :justify-content="['center', 'center', 'flex-end']"
-
+          :justify-content="['center', 'center', 'flex-end']"
         >
           <CLink
             color="gray.400"
             href="https://github.com/rxmii4269/Geek2Door-Frontend"
             is-external
             title="Geek2Door Frontend Github"
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="github"></CIcon>
           </CLink>
@@ -70,7 +69,7 @@
             href="https://geek2door.rmtech.tk"
             title="Geek2Door"
             is-external
-             :_hover="{color: 'var(--blue)'}"
+            :_hover="{ color: 'var(--blue)' }"
           >
             <CIcon font-size="20px" name="external-link-alt" />
           </CLink>
@@ -85,6 +84,7 @@
             quality="100"
             format="webp"
             alt="geek2door image"
+            loading="lazy"
           ></nuxt-picture>
         </CBox>
       </CLink>
