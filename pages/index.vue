@@ -8,7 +8,7 @@
       justify-content="center"
       min-height="100vh"
       w="100%"
-      :mt="['100px', '60px', '0', '0']"
+      :mt="['100px', '100px', '100px', '100px']"
       :px="['10px', '10px', '10px']"
       class="animate__animated animate__fadeInUp"
     >
