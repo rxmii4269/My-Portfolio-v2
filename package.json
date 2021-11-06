@@ -15,14 +15,14 @@
     "@nuxtjs/emotion": "^0.1.0",
     "@nuxtjs/pwa": "^3.3.5",
     "animate.css": "^4.1.1",
-    "core-js": "^3.18.3",
+    "core-js": "^3.19.1",
     "fibers": "^5.0.0",
     "nuxt": "^2.15.8",
     "sass-loader": "10",
     "vue-animate-onscroll": "^1.0.8"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.8",
+    "@babel/eslint-parser": "^7.16.0",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@nuxt/image": "^0.6.0",
@@ -35,9 +35,9 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-nuxt": "^3.0.0",
     "eslint-plugin-vue": "^7.20.0",
     "prettier": "^2.4.1",
-    "sass": "^1.43.3"
+    "sass": "^1.43.4"
   }
 }
