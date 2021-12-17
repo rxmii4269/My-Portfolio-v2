@@ -24,10 +24,10 @@
       :px="['1rem', '1rem', '0']"
       >About Me</CHeading
     >
-    <CBox
+    <CGrid
       :d="['flex', 'grid', 'grid']"
       grid-template-columns="3fr 2fr"
-      :gap="['0px', '50px']"
+      :gap="['30px']"
       :flex-direction="['column', 'unset', 'unset']"
       :align-items="['center', 'unset']"
     >
@@ -76,8 +76,8 @@
           class="skills"
         >
           <CListItem
-            v-for="stack in techStack"
-            :key="stack.index"
+            v-for="(stack, index) in techStack"
+            :key="index"
             position="relative"
             margin-bottom="10px"
             pl="20px"
@@ -87,22 +87,23 @@
           </CListItem>
         </CList>
       </CBox>
-      <CBox position="relative" max-width="300px">
-        <CBox border-radius="3px" class="me">
-          <nuxt-picture
-            format="webp"
-            quality="100"
-            width="300"
-            height="300"
-            src="/me.jpg"
-            alt="me"
-            class="image-me"
-            sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
-            loading="lazy"
-          ></nuxt-picture
-        ></CBox>
-      </CBox>
-    </CBox>
+      <CBox
+        border-radius="3px"
+        class="me"
+        max-width="300px"
+        position="relative"
+      >
+        <nuxt-picture
+          format="webp"
+          quality="100"
+          src="/me.jpg"
+          alt="me"
+          class="image-me"
+          sizes="xxl:100vw 2xl:100vw xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
+          loading="lazy"
+        ></nuxt-picture
+      ></CBox>
+    </CGrid>
   </CBox>
 </template>
 <script lang="ts">
@@ -152,6 +153,10 @@ export default Vue.extend({
   color: var(--blue);
   line-height: 12px;
   font-size: 1rem;
+}
+
+.image-me > img {
+  border-radius: 3px;
 }
 
 .me {

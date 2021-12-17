@@ -83,6 +83,7 @@
             src="/geek2door.rmtech.tk.png"
             quality="100"
             format="webp"
+            sizes="xxl:100vw 2xl:100vw xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
             alt="geek2door image"
             loading="lazy"
           ></nuxt-picture>

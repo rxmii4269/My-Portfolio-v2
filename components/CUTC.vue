@@ -88,6 +88,7 @@
             quality="100"
             format="webp"
             alt="Task Management System preview"
+            sizes="xxl:100vw 2xl:100vw xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
             loading="lazy"
           ></nuxt-picture>
         </CBox>
