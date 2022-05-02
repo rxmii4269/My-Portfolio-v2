@@ -25,8 +25,8 @@
       flex-grow="1"
     >
       <CLink
+        as="router-link"
         mt="2"
-        as="nuxt-link"
         to="/"
         mr="auto"
         font-weight="bold"
@@ -38,7 +38,7 @@
           w="40px"
           h="40px"
         >
-          <Logo />
+          <PortfolioLogo />
         </CPseudoBox>
       </CLink>
       <CFlex
@@ -60,7 +60,7 @@
             mx="5px"
             counter-increment="item 1"
             ><CLink
-              as="nuxt-link"
+              as="router-link"
               :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
               :_hover="{ color: 'var(--blue)' }"
               p="10px"
@@ -76,7 +76,7 @@
             mx="5px"
             counter-increment="item 1"
             ><CLink
-              as="nuxt-link"
+              as="router-link"
               :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
               :_hover="{ color: 'var(--blue)' }"
               p="10px"
@@ -92,7 +92,7 @@
             mx="5px"
             counter-increment="item 1"
             ><CLink
-              as="nuxt-link"
+              as="router-link"
               :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
               :_hover="{ color: 'var(--blue)' }"
               p="10px"
@@ -108,7 +108,7 @@
             mx="5px"
             counter-increment="item 1"
             ><CLink
-              as="nuxt-link"
+              as="router-link"
               :_focus="{ outline: '2px dashed #76e4f7', outlineOffset: '3px' }"
               :_hover="{ color: 'var(--blue)' }"
               p="10px"
@@ -138,7 +138,7 @@
       </CFlex>
       <CIconButton
         icon="bars"
-        bg="var(--blue)"
+        background-color="var(--blue)"
         color="blue.900"
         aria-label="menu-button"
         :display="['block', 'block', 'none']"
@@ -176,7 +176,7 @@
                 mx="5px"
                 counter-increment="item 1"
                 ><CLink
-                  as="nuxt-link"
+                  as="router-link"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
@@ -194,7 +194,7 @@
                 mx="5px"
                 counter-increment="item 1"
                 ><CLink
-                  as="nuxt-link"
+                  as="router-link"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
@@ -212,7 +212,7 @@
                 mx="5px"
                 counter-increment="item 1"
                 ><CLink
-                  as="nuxt-link"
+                  as="router-link"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
@@ -230,7 +230,7 @@
                 mx="5px"
                 counter-increment="item 1"
                 ><CLink
-                  as="nuxt-link"
+                  as="router-link"
                   :_focus="{
                     outline: '2px dashed #76e4f7',
                     outlineOffset: '3px',
@@ -266,50 +266,85 @@
     </CBox>
   </CBox>
 </template>
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+import {
+  CBox,
+  CLink,
+  CPseudoBox,
+  CFlex,
+  CList,
+  CListItem,
+  CButton,
+  CIconButton,
+  CDrawer,
+  CDrawerOverlay,
+  CDrawerContent,
+  CDrawerHeader,
+  CDrawerBody,
+} from '@chakra-ui/vue';
+import PortfolioLogo from './Logo.vue';
+
+export default Vue.extend({
   data() {
     return {
       isOpen: false,
       hide: false,
       lastScrollTop: 0,
-    }
+    };
+  },
+  components: {
+    CBox,
+    CLink,
+    CPseudoBox,
+    CFlex,
+    CList,
+    CListItem,
+    CButton,
+    CIconButton,
+    CDrawer,
+    CDrawerOverlay,
+    CDrawerContent,
+    CDrawerHeader,
+    CDrawerBody,
+    PortfolioLogo,
   },
   mounted() {
-    this.handleScroll()
+    this.handleScroll();
   },
   methods: {
     toggleDrawer() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     },
     close() {
-      this.isOpen = false
+      this.isOpen = false;
     },
     handleScroll() {
       if (!this.hide) {
-        window.addEventListener('scroll', this.scrollListener)
+        window.addEventListener('scroll', this.scrollListener);
       }
     },
     scrollListener() {
-      const scrollTop = window.scrollY
+      const scrollTop = window.scrollY;
       if (scrollTop > this.lastScrollTop) {
-        this.hide = true
+        this.hide = true;
       } else {
-        this.hide = false
+        this.hide = false;
       }
-      this.lastScrollTop = scrollTop
+      this.lastScrollTop = scrollTop;
     },
   },
-}
+});
 </script>
 <style>
 .nav-list:before {
-  content: '0' counter(item) '.';
+  content: "0" counter(item) ".";
   counter-increment: item;
   margin-right: 5px;
   text-align: right;
   color: #76e4f7;
 }
+
 .animate__animated.animate__fadeInDown:first-of-type {
   --animate-delay: 0.9s;
   --animate-duration: 0.3s;

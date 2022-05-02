@@ -71,7 +71,7 @@
             title="Quiz App Website"
             :_hover="{ color: 'var(--blue)' }"
           >
-            <CIcon font-size="20px" name="external-link-alt" />
+            <CIcon font-size="20px" name="arrow-up-right-from-square" />
           </CLink>
         </CFlex>
       </CBox>

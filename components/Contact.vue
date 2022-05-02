@@ -40,12 +40,28 @@
     >
   </CBox>
 </template>
+<script lang="ts">
+import Vue from 'vue';
+import {
+  CButton, CHeading, CText, CBox,
+} from '@chakra-ui/vue';
+
+export default Vue.extend({
+  components: {
+    CButton,
+    CHeading,
+    CText,
+    CBox,
+  },
+  name: 'ContactMe',
+});
+</script>
 <style>
 .whats-next:before {
   bottom: 0px;
   font-size: 19px;
   counter-increment: section 4;
-  content: '0' counter(section) '.';
+  content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--blue);
 }

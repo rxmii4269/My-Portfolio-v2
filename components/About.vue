@@ -1,7 +1,7 @@
 <template>
   <CBox
     id="about"
-    v-animate-onscroll="'animate__animated animate__fadeInLeft '"
+    v-animate-onscroll="'animate__animated animate__fadeInLeft'"
     as="section"
     max-width="900px"
     py="100px"
@@ -33,13 +33,13 @@
     >
       <CBox>
         <CBox :px="['1rem', '1rem', '0rem']">
-          <CText color="gray.500"
-            >Hello! My name is Romaine and I enjoy creating things that live on
+          <CText color="gray.500">
+            Hello! My name is Romaine and I enjoy creating things that live on
             the internet. My interest in web development began when I took a web
             development course just to gain extra credits and ended up falling
             in love with the whole process of creating amazing and useful web
-            apps ranging from quirky to utilitarian.</CText
-          >
+            apps ranging from quirky to utilitarian
+          </CText>
           <CText color="gray.500" mb="4"
             >Fast-foward to today, and I've had the privilege of working at
             <CLink
@@ -53,7 +53,7 @@
             software engineer. My main focus these days is building accessible,
             inclusive products and digital experiences at
             <CLink
-              href="http://knightfoxapps.com/"
+              href="https://knightfoxapps.com/"
               is-external
               color="var(--blue)"
               title="KnightFox App Design"
@@ -76,8 +76,8 @@
           class="skills"
         >
           <CListItem
-            v-for="(stack, index) in techStack"
-            :key="index"
+            v-for="stack in techStack"
+            :key="stack"
             position="relative"
             margin-bottom="10px"
             pl="20px"
@@ -91,26 +91,42 @@
         border-radius="3px"
         class="me"
         max-width="300px"
+        max-height="300px"
         position="relative"
       >
-        <nuxt-picture
-          format="webp"
-          quality="100"
-          src="/me.jpg"
-          alt="me"
+        <img
+          src="@/assets/me.webp"
+          alt="Portrait of Romaine Murray"
           class="image-me"
-          sizes="xxl:100vw 2xl:100vw xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
           loading="lazy"
-        ></nuxt-picture
-      ></CBox>
+        />
+      </CBox>
     </CGrid>
   </CBox>
 </template>
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'About',
+import Vue from 'vue';
+import {
+  CBox,
+  CHeading,
+  CGrid,
+  CText,
+  CLink,
+  CList,
+  CListItem,
+} from '@chakra-ui/vue';
 
+export default Vue.extend({
+  name: 'AboutMe',
+  components: {
+    CBox,
+    CHeading,
+    CGrid,
+    CText,
+    CLink,
+    CList,
+    CListItem,
+  },
   data() {
     return {
       techStack: [
@@ -122,23 +138,24 @@ export default Vue.extend({
         'Buefy',
         'Bulma',
         'Chakra UI',
+        'Typescript',
       ],
-    }
+    };
   },
-})
+});
 </script>
 <style>
 .about:before {
   position: relative;
   bottom: 1px;
   counter-increment: section;
-  content: '0' counter(section) '.';
+  content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--blue);
   font-size: 25px;
 }
 .about:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   width: 300px;
@@ -147,15 +164,16 @@ export default Vue.extend({
   background-color: #2d3748;
 }
 .skills li:before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0px;
   color: var(--blue);
   line-height: 12px;
   font-size: 1rem;
+  top: 5px;
 }
 
-.image-me > img {
+.image-me {
   border-radius: 3px;
 }
 
@@ -165,7 +183,7 @@ export default Vue.extend({
 }
 
 .me:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;

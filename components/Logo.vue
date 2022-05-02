@@ -1,4 +1,5 @@
-<template>
+<!-- eslint-disable max-len -->
+<template functional>
   <svg
     id="svg8"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -133,3 +134,10 @@
     </g>
   </svg>
 </template>
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+  name: 'PortfolioLogo',
+});
+</script>

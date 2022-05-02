@@ -22,3 +22,19 @@
     </CFlex>
   </CBox>
 </template>
+<script lang="ts">
+import Vue from 'vue';
+import {
+  CBox, CFlex, CLink, CIcon,
+} from '@chakra-ui/vue';
+
+export default Vue.extend({
+  name: 'FooterComponent',
+  components: {
+    CBox,
+    CFlex,
+    CLink,
+    CIcon,
+  },
+});
+</script>

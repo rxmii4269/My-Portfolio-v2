@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "title": "Geek2Door",
+      "description": "Match interns to internships and vice-versa all with one simple click.",
+      "techStack": ["Vue", "Nuxt.js", "Buefy", "Flask", "PostgreSQL"],
+      "image": "geek2door.rmtech.tk.webp",
+      "link": "https://geek2door.rmtech.tk",
+      "links": [
+        {
+          "url": "https://github.com/rxmii4269/Geek2Door-Frontend",
+          "title": "Geek2Door"
+        },
+        {
+          "url": "https://geek2door.rmtech.tk",
+          "title": "Geek2Door"
+        }
+      ],
+      "icons": ["github", "arrow-up-right-from-square"]
+    },
+    {
+      "title": "Geek2Door Admin",
+      "description": "Monitor information on students and internships alike from Geek2Door in central area",
+      "techStack": ["Vue", "Nuxt.js", "Buefy", "Flask", "PostgreSQL"],
+      "image": "admin.geek2door.rmtech.tk.webp",
+      "link": "https://admin.geek2door.rmtech.tk",
+      "links": [
+        {
+          "url": "https://github.com/rxmii4269/Geek2Door-Admin",
+          "title": "Geek2Door Admin"
+        },
+        {
+          "url": "https://admin.geek2door.rmtech.tk",
+          "title": "Geek2Door Admin"
+        }
+      ],
+      "icons": ["github", "arrow-up-right-from-square"]
+    },
+    {
+      "title": "Country Quiz App",
+      "description": "A quiz game that tests your knowledge on country capitals the corresponding flags.",
+      "techStack": ["Vue", "TailWindCSS", "Country API", "PWA"],
+      "image": "quizzapp.rmtech.tk.webp",
+      "link": "https://quizzapp.rmtech.tk",
+      "links": [
+        {
+          "url": "https://github.com/rxmii4269/quizz-app",
+          "title": "Country Quiz App"
+        },
+        {
+          "url": "https://quizzapp.rmtech.tk",
+          "title": "Country Quiz App"
+        }
+      ],
+      "icons": ["github", "arrow-up-right-from-square"]
+    },
+    {
+      "title": "Weather App",
+      "description": "Get your current weather and 5 day forecast with an elegant and clean interface.",
+      "techStack": [
+        "Vue",
+        "TailWindCSS",
+        "PWA",
+        "Open Weather API",
+        "Maps Geocoding API"
+      ],
+      "image": "weather.rmtech.tk.webp",
+      "link": "https://weather.rmtech.tk",
+      "links": [
+        {
+          "url": "https://github.com/rxmii4269/weather-app",
+          "title": "Weather App"
+        },
+        {
+          "url": "https://weather.rmtech.tk",
+          "title": "Weather App"
+        }
+      ],
+      "icons": ["github", "arrow-up-right-from-square"]
+    },
+    {
+      "title": "TaskWind - Task Management System",
+      "description": "Monitor all of your companies tasks: assign, comment on and complete your tasks.",
+      "techStack": ["Vue", "Nuxt.js", "BootstrapVue", "Bootstrap 4"],
+      "image": "flamboyant-nobel-29426f.netlify.app.webp",
+      "link": "https://flamboyant-nobel-29426f.netlify.app",
+      "links": [
+        {
+          "url": "https://github.com/rxmii4269/JUTC-Maintainance",
+          "title": "TaskWind - Task Management System"
+        },
+        {
+          "url": "https://flamboyant-nobel-29426f.netlify.app",
+          "title": "TaskWind - Task Management System"
+        }
+      ],
+      "icons": ["github", "arrow-up-right-from-square"]
+    }
+  ]
+}

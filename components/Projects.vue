@@ -25,40 +25,54 @@
       >Some Things I've Built
     </CHeading>
     <CList padding="0" margin="0">
-      <Geek2Door v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
-      <Geek2DoorAdmin
-        v-animate-onscroll="'animate__animated animate__fadeInRight'"
+      <ProjectCard
+        v-animate-onscroll="
+          `animate__animated animate__fadeIn${
+            index % 2 === 0 ? 'Left' : 'Right'
+          }`
+        "
+        v-for="(project, index) in projects"
+        :key="project.title"
+        :index='index'
+        :project="project"
       />
-      <QuizApp v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
-      <WeatherApp
-        v-animate-onscroll="'animate__animated animate__fadeInRight'"
-      />
-      <CUTC v-animate-onscroll="'animate__animated animate__fadeInLeft'" />
     </CList>
   </CBox>
 </template>
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  name: 'Projects',
+import Vue from 'vue';
+import { CBox, CList, CHeading } from '@chakra-ui/vue';
+// @ts-expect-error no loader
+import { projects } from '@/data/projects.json';
+import ProjectCard from './ProjectCard.vue';
 
-  data() {
-    return {}
+export default Vue.extend({
+  name: 'ProjectsComponent',
+  components: {
+    CBox,
+    CList,
+    CHeading,
+    ProjectCard,
   },
-})
+  data() {
+    return {
+      projects,
+    };
+  },
+});
 </script>
 <style>
 .projects:before {
   position: relative;
   bottom: 1px;
   counter-increment: section 3;
-  content: '0' counter(section) '.';
+  content: "0" counter(section) ".";
   margin-right: 10px;
   color: var(--blue);
   font-size: 25px;
 }
 .projects:after {
-  content: '';
+  content: "";
   display: block;
   position: relative;
   width: 300px;

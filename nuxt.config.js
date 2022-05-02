@@ -1,10 +1,10 @@
-import { faExternalLinkAlt, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import customTheme from './custom-theme'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  // ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -104,9 +104,9 @@ export default {
   chakra: {
     extendTheme: customTheme,
     icons: {
-      iconPack: ['fas', 'fab'],
+      iconPack: ['fa-solid', 'fab'],
       iconSet: {
-        faExternalLinkAlt,
+        faArrowUpRightFromSquare,
         faGithub,
         faLinkedinIn,
         faBars,
