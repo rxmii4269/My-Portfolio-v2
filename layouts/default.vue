@@ -25,6 +25,7 @@
 import { CThemeProvider, CReset, CBox } from '@chakra-ui/vue'
 import RightSideBar from '~/components/RightSideBar.vue'
 import LeftSideBar from '~/components/LeftSideBar.vue'
+import NavBar from '~/components/NavBar.vue'
 
 export default {
   name: 'App',
@@ -33,7 +34,8 @@ export default {
     CReset,
     CBox,
     RightSideBar,
-    LeftSideBar
+    LeftSideBar,
+    NavBar
 },
   methods: {},
 }
