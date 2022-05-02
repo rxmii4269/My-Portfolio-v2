@@ -21,7 +21,7 @@
     </CThemeProvider>
   </div>
 </template>
-<script>
+<script lang="ts">
 import { CThemeProvider, CReset, CBox } from '@chakra-ui/vue'
 import RightSideBar from '~/components/RightSideBar.vue'
 import LeftSideBar from '~/components/LeftSideBar.vue'
