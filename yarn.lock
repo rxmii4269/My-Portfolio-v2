@@ -4728,7 +4728,7 @@ eslint@^8.20.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-espree@^9.0.0, espree@^9.3.2:
+espree@^9.0.0, espree@^9.3.1, espree@^9.3.2:
   version "9.3.2"
   resolved "https://registry.yarnpkg.com/espree/-/espree-9.3.2.tgz#f58f77bd334731182801ced3380a8cc859091596"
   integrity sha512-D211tC7ZwouTIuY5x9XnS0E9sWNChB7IYKX/Xp5eQj3nFXhqmiUDB9q27y76oFl8jTg3pXcQx/bpxMfs3CIZbA==
@@ -4947,10 +4947,10 @@ fetch-blob@^3.1.2, fetch-blob@^3.1.4:
     node-domexception "^1.0.0"
     web-streams-polyfill "^3.0.3"
 
-fibers@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/fibers/-/fibers-5.0.1.tgz#bb9b02aa022685185d21aed227363e456d87660d"
-  integrity sha512-VMC7Frt87Oo0AOJ6EcPFbi+tZmkQ4tD85aatwyWL6I9cYMJmm2e+pXUJsfGZ36U7MffXtjou2XIiWJMtHriErw==
+fibers@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/fibers/-/fibers-5.0.2.tgz#662997f35cf9fc7bd80d4891a4ac08ec73dfe5f7"
+  integrity sha512-ffPy0nw6/twbeAMN64fOmDNpNAvwQCRyAXaco8eaNXg82PUGwj4z0UH/3DvbUfhfa9oVOjkT2MPwSAUzlP+BQA==
   dependencies:
     detect-libc "^1.0.3"
 
