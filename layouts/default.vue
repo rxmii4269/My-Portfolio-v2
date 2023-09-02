@@ -10,7 +10,7 @@
           direction="column"
           bg="blue.900"
         >
-          <NavBar />
+          <Navbar />
           <LeftSideBar />
           <Nuxt />
 
